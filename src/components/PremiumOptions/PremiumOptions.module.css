@@ -1,0 +1,45 @@
+.premium {
+  min-height: 35.71rem;
+}
+
+.premium-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-top: 130px;
+}
+
+.option {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 285px;
+}
+
+.option img {
+  text-align: center;
+  margin-bottom: 40px;
+  width: 142px;
+  height: 142px;
+}
+.premium-options .info {
+  padding: 0 20px;
+}
+
+.info h5 {
+  margin-bottom: 10px;
+}
+
+.premium-options .description {
+  width: 231.3px;
+  text-wrap: wrap;
+  padding: 0 20px;
+  /* padding: 0 40px 0 30px; */
+}
+/* .option h5,
+.option small {
+  text-align: center;
+} */

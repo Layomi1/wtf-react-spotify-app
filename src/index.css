@@ -1,13 +1,80 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+:root {
+  --app-padding: 0 150px;
+  --button-padding: 16px 35px;
+  --header-one: 2.375rem;
+  --header-five: 1.187rem;
+  --p-size: 1.5rem;
+  --small-font-size: 1rem;
+  --btn-font-size: 0.813rem;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: var(--header-one);
+  font-size: 600;
+}
+
+h5 {
+  font-size: var(--header-five);
+  font-weight: 600;
+}
+p {
+  font-size: var(--p-size);
+}
+small {
+  font-size: var(--small-font-size);
+  line-height: 1.5;
+}
+
+section {
+  padding: var(--app-padding);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn,
+.btn-primary,
+.btn-black,
+.btn-oulined,
+.btn-secondary {
+  font-size: var(--btn-font-size);
+  padding: var(--button-padding);
+  border-radius: 25px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn-black {
+  background-color: #000;
+  border: none;
+}
+
+.btn-primary {
+  background-color: #1877f2;
+}
+
+.btn-outlined {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-secondary {
+  color: #000;
+  border-color: #000;
 }

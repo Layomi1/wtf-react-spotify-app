@@ -1,0 +1,25 @@
+header {
+  display: flex;
+  background-color: #000;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 10px 150px;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+ul li a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.register {
+  color: #d9dadc;
+}

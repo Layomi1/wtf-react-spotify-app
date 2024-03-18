@@ -1,0 +1,34 @@
+button {
+  text-transform: uppercase;
+  font-size: var(--btn-font-size);
+  padding: var(--button-padding);
+  border-radius: 25px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.btn,
+.primary,
+.black,
+.oulined {
+  font-size: var(--btn-font-size);
+  padding: var(--button-padding);
+  border-radius: 25px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.black {
+  background-color: #000;
+  border: none;
+}
+
+.primary {
+  background-color: #1877f2;
+}
+
+.outlined {
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #000;
+}

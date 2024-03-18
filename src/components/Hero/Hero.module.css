@@ -1,0 +1,18 @@
+.home-banner {
+  min-height: 30rem;
+  background-color: #1d75de;
+  color: #fff;
+  gap: 25px;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.link {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: underline;
+}

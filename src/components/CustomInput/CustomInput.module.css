@@ -1,0 +1,22 @@
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+  align-items: center;
+  position: relative;
+}
+.wrap label {
+  font-weight: bold;
+  font-size: 13px;
+  color: #6a6a6a;
+  font-family: "Inter", sans-serif;
+}
+
+input {
+  width: 100%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-family: "Inter", sans-serif;
+}

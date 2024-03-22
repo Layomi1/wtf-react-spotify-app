@@ -1,4 +1,10 @@
-.icon {
-  width: 24px;
-  height: 24px;
+.customButton {
+  width: 450px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px;
+  font-weight: bold;
 }

@@ -1,4 +1,5 @@
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
+import CustomButton from "../CustomButton/CustomButton";
 
 import styles from "./Hero.module.css";
 function Hero() {
@@ -9,8 +10,15 @@ function Hero() {
         Just ₹119/month after. Debit and credit cards accepted. Cancel anytime.
       </p>
       <div className={styles.btns}>
-        <Button type="btn-black" text={"GET STARTED"} />
-        <Button type="btn-outlined" text={"SEE OTHER PLANS"} />
+        <CustomButton
+          text={"GET STARTED"}
+          className={styles.CustomButton}
+          buttonStyle={styles["btn-one"]}
+        />
+        <CustomButton
+          text={"SEE OTHER PLANS"}
+          buttonStyle={styles["btn-two"]}
+        />
       </div>
       <small>
         <a href="/terms" className={styles.link}>

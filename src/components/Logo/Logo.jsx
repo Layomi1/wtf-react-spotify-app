@@ -1,17 +1,19 @@
 import whiteLogo from "../../assets/images/whiteLogo.svg";
 import blackLogo from "../../assets/images/blackLogo.svg";
+import { Link } from "react-router-dom";
+
 function Logo(props) {
   if (props.useWhite) {
     return (
-      <a href="#/dashborad">
+      <Link to="/login">
         <img src={blackLogo} alt="logo" />
-      </a>
+      </Link>
     );
   }
   return (
-    <a href="#/dashborad">
+    <Link to="/">
       <img src={whiteLogo} alt="logo" />
-    </a>
+    </Link>
   );
 }
 export default Logo;

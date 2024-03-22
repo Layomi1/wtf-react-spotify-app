@@ -1,11 +1,11 @@
-button {
+/* button {
   text-transform: uppercase;
   font-size: var(--btn-font-size);
   padding: var(--button-padding);
   border-radius: 25px;
   cursor: pointer;
   color: #fff;
-}
+} */
 
 .btn,
 .primary,
@@ -23,7 +23,7 @@ button {
   border: none;
 }
 
-.primary {
+.primary-btn {
   background-color: #1877f2;
 }
 

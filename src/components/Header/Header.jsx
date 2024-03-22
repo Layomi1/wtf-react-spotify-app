@@ -1,12 +1,12 @@
-import "./Header.css";
+import styles from "./Header.module.css";
 import Logo from "../Logo/Logo";
 import { Link } from "react-router-dom";
 
 function Header() {
   return (
     <header>
-      <div className="logo">
-        <Link to="/">
+      <div className={styles.logo}>
+        <Link to="">
           <Logo useState={true} />
         </Link>
       </div>
@@ -21,14 +21,14 @@ function Header() {
         <li>
           <Link to="/download">Download</Link>
         </li>
-        <li className="register">|</li>
+        <li className={styles.register}>|</li>
         <li>
-          <Link to="sign-up" className="register">
+          <Link to="sign-up" className={styles.register}>
             Sign up
           </Link>
         </li>
         <li>
-          <Link to="/login" className="register">
+          <Link to="/login" className={styles.register}>
             Log in
           </Link>
         </li>

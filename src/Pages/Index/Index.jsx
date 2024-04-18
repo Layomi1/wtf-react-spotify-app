@@ -1,4 +1,4 @@
-// import React, { Link } from "react";
+import { useState } from "react";
 import styles from "./Index.module.css";
 import Logo from "../../components/Logo/Logo";
 import CustomButton from "../../components/CustomButton/CustomButton";
@@ -9,6 +9,13 @@ import line from "../../assets/images/line.png";
 import CustomInput from "../../components/CustomInput/CustomInput";
 
 const LoginSignup = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    alert("submitted");
+  };
   return (
     <div className={styles["login-signup"]}>
       <div className={styles.header}>
@@ -46,11 +53,13 @@ const LoginSignup = () => {
         </div>
 
         <div className={styles["form-area"]}>
-          <form>
+          <form onSubmit={handleSubmit}>
             <label>Email address or username</label>
             <div className={styles["input-container"]}>
               <CustomInput
+                onChange={(e) => setEmail(e.target.value)}
                 type="email"
+                value={email}
                 placeholder="Email address or username"
                 required
               />
@@ -58,7 +67,11 @@ const LoginSignup = () => {
 
             <label>Password</label>
             <div className={styles["input-container"]}>
-              <CustomInput type="password" placeholder="Password" />
+              <CustomInput
+                type="password"
+                placeholder="Password"
+                onChange={(e) => setPassword(e.target.value)}
+              />
             </div>
             <a className={styles.anchor} href="/login">
               Forgot your password?
@@ -69,6 +82,7 @@ const LoginSignup = () => {
                 <label className={styles.check}>Remember me</label>
               </div>
               <CustomButton
+                disabled={!password}
                 type="button"
                 text="Log In"
                 buttonStyle={styles["login-btn"]}

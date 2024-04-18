@@ -8,3 +8,7 @@
   font-size: 14px;
   font-weight: bold;
 }
+
+.customButton:disabled {
+  opacity: 0.2;
+}

@@ -14,12 +14,6 @@ const CustomInput = ({ label, ...props }) => {
     setShow(!show);
   };
 
-  // const[value, setValue] = useState("");
-  // const handleClick =(e)=> {
-  //   e.preventDefault();
-  //   console.log('submitted');
-  //   setValue{''};
-  // }
   return (
     <div className={styles.wrap}>
       <label htmlFor={props.type}>{label}</label>
@@ -27,9 +21,9 @@ const CustomInput = ({ label, ...props }) => {
       {props.type === "password" && (
         <div className={styles.icons} onClick={toggleIcon}>
           {show ? (
-            <BiHide size={"1.5rem"} />
-          ) : (
             <MdOutlineVisibility size={"1.5rem"} />
+          ) : (
+            <BiHide size={"1.5rem"} />
           )}
         </div>
       )}
